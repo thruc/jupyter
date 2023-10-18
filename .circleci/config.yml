@@ -26,6 +26,7 @@ jobs:
      docker:
         - image: cimg/base:2023.09
      steps:
+       - checkout
        - run:
            name: git-pr-release
            command: |
