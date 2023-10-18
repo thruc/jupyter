@@ -34,6 +34,7 @@ jobs:
              BRANCH_NAME=${CIRCLE_BRANCH}
              BK_BRANCH_NAME=${BRANCH_NAME}_${DATE}
              echo ${BK_BRANCH_NAME}
+             git remote -v
              git pull
              git branch -m ${BK_BRANCH_NAME}
              git push origin ${BK_BRANCH_NAME}
